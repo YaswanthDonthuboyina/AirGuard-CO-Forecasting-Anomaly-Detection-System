@@ -1,0 +1,10 @@
+Feedback: Here is my feedback:
+
+Please use a multi-fold validation approach (3-fold or 5-fold).
+Model Evaluation:
+Test Set #1 (In-Distribution Samples): Use the actual test examples.
+Test Set #2 (Out-of-Distribution Samples): Create an additional test set by adding noise to the original test examples or by generating random samples.
+Evaluate your models on both test sets.
+Develop a system that can automatically detect OOD examples and remove them before running the classifier.
+You must provide statistical validation of your results.
+- Md Zahangir Alom
