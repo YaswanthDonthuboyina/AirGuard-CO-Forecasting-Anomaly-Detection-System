@@ -13,13 +13,14 @@ This project develops and validates a machine learning system to predict Carbon 
 ## Project Structure
 ```
 .
+├── AirQualityUCI.csv       # Dataset (CSV format)
+├── AirQualityUCI.xlsx      # Dataset (Excel format)
+├── air+quality.zip         # Original zipped dataset
 ├── api/
 │   └── app.py              # FastAPI application script
-├── data/                   # (Git-ignored) Place dataset here
-│   └── AirQualityUCI.xlsx
 ├── models/                 # (Git-ignored) Trained model, scaler, and OOD detector
 ├── notebooks/
-│   └── Untitled-Copy1.ipynb # Original exploratory notebook
+│   └── co_prediction.ipynb # Main exploratory and analysis notebook
 ├── src/
 │   ├── data_preprocessing.py   # Script for cleaning data
 │   ├── feature_engineering.py  # Script for creating features
@@ -41,12 +42,24 @@ This project develops and validates a machine learning system to predict Carbon 
    ```
 2. **Download the Dataset**:
    - Download the **Air Quality Data Set** from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Air+Quality).
-   - Place the `AirQualityUCI.xlsx` file in the root of the project directory.
+   - After extracting, ensure `AirQualityUCI.csv`, `AirQualityUCI.xlsx`, and `air+quality.zip` are placed in the root of the project directory.
 
 3. Create and activate a virtual environment (recommended):
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+
+   # Activation commands for different environments:
+   # On Linux / macOS
+   source venv/bin/activate
+
+   # On Windows (Command Prompt)
+   venv\Scripts\activate
+
+   # On Windows (PowerShell)
+   .\venv\Scripts\Activate.ps1
+
+   # On Windows (Git Bash / MinGW)
+   . venv/Scripts/activate
    ```
 4. Install the required dependencies:
    ```bash
