@@ -144,10 +144,10 @@ The final model, a tuned `GradientBoostingRegressor`, achieved a mean R² of **0
 ## System Architecture
 
 ### High-Level Architecture
-![Architecture Diagram](docs/images/architecture_diagram.png)
+![Architecture Diagram](images/architecture_diagram.png)
 
 ### Data Flow Pipeline
-![Data Flow Diagram](docs/images/data_flow_diagram.png)
+![Data Flow Diagram](images/data_flow_diagram.png)
 
 ### Key Components
 - **Data Pipeline:** Handles preprocessing, feature engineering (temporal, cyclical, interactions), and outlier removal.
